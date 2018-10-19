@@ -1,0 +1,90 @@
+// variables
+
+$c-dk-orange: #EB5426;
+$c-yellow: #FFD45A;
+
+$f-arbutus: 'Arbutus Slab', serif;
+$f-oswald: 'Oswald', sans-serif;
+
+$f-title: $f-oswald;
+$f-body: $f-arbutus;
+
+// structure
+body {
+  background-image: linear-gradient(135deg, #EB5426 0%, #FFD45A 100%);
+  min-height: 100vh;
+}
+
+// all the other stuff
+
+nav {
+  h1 {
+    font-family: $f-title;
+    text-transform: uppercase;
+    font-size: 100px;
+    display: inline;
+  }
+
+  img {
+    display: inline;
+    margin-left: 20px;
+  }
+}
+
+main {
+  font-family: $f-body;
+
+  p {
+    font-size: 24px;
+    max-width: 1000px;
+  }
+
+  h2 {
+    font-family: $f-title;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+
+  ul {
+    list-style-type: square;
+
+    li {
+      font-size: 24px;
+    }
+  }
+
+  a {
+    color: black;
+  }
+}
+
+// cursor thingy that does a blink
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#cursor {
+  height: 22px;
+  width: 3px;
+  background-color: black;
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  top: 3px;
+  opacity: 1;
+  animation: blink 1s infinite both;
+}
+
+// cute asc-bee that is cute
+
+.bee {
+  margin-top: 300px;
+}
